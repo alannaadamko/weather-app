@@ -13,7 +13,9 @@
 </head>
 <body>
   <div class="container">
+  <div class="weather-app-wrapper">
 <div class="weather-app">
+  <div class="overview">
  <h1> 
     Saskatoon
   </h1>
@@ -26,11 +28,18 @@
    </li>
    <div class="row">
      <div class="col-6">
-       <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+       <div class="clearfix weather-temperature">
+       <img 
+       src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
      alt="Clear"
+     class="float-left"
 />
-20°C | °F 
-   </div>
+<div class="float-left"><strong>20</strong><span class unit>°C | <a href="#">°F</a></span>
+</div>
+</div> 
+</div>
+  </div>
+
    <div class="col-6">
      <ul>
        <li>
@@ -45,14 +54,17 @@
      </ul>
    </div>
  </ul>
-  <small>
+ 
+</div>
+ <small>
     <a href= "https://github.com/alannaadamko/weather-app"
     target="_blank"
     >Open Source Code</a
     > 
     by Alanna Adamko
   </small>
+  </div>
 </div>
-<script src="src/app.js"></script>
+  <script src="src/app.js"></script>
 </body>
 </html>
